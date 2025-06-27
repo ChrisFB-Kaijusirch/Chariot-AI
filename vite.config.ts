@@ -4,6 +4,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: '/Chariot-AI/',
   clearScreen: false,
+  build: {
+    outDir: 'docs',   // <--- Add this line!
+    emptyOutDir: true // clean out docs/ on each build
+  },
   plugins: [
     react(),
     {
