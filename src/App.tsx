@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Chariot-AI">
       <Layout>
         <Routes>
           <Route path="/" element={<Index />} />

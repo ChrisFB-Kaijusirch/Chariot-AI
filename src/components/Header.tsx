@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/holdings-ctc-logo.svg'; // Adjust the path if your assets folder is elsewhere
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/holdings-ctc-logo.svg" alt="Holdings CTC" className="h-10 w-10" />
+            <img src={logo} alt="Holdings CTC" className="h-10 w-10" />
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-white">Holdings CTC</div>
               <div className="text-sm text-blue-100">Premium Web Apps That Drive Results</div>
