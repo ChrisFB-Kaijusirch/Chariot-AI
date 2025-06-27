@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import logo from '../assets/holdings-ctc-logo.svg'; // Adjust path if necessary
+
 function Footer() {
   return (
     <footer className="bg-[#004A8B] text-white">
@@ -6,7 +9,7 @@ function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/holdings-ctc-logo.svg" 
+                src={logo} 
                 alt="Holdings CTC" 
                 className="h-10 w-10"
               />
@@ -23,10 +26,10 @@ function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Home</a></li>
-              <li><a href="/projects" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Projects</a></li>
-              <li><a href="/about" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">About</a></li>
-              <li><a href="/contact" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Contact</a></li>
+              <li><Link to="/" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Home</Link></li>
+              <li><Link to="/projects" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Projects</Link></li>
+              <li><Link to="/about" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">About</Link></li>
+              <li><Link to="/contact" className="text-[#8ED9FF] hover:text-white transition-colors text-sm sm:text-base">Contact</Link></li>
             </ul>
           </div>
           
