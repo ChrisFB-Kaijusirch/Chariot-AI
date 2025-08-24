@@ -4,9 +4,10 @@
   status: string;
   features: string[];
   icon: string;
+  link?: string;
 }
 
-function ProjectCard({ title, description, status, features, icon }: ProjectCardProps) {
+function ProjectCard({ title, description, status, features, icon, link }: ProjectCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 border border-[#F2F2F2]">
       <div className="flex items-center mb-4">
@@ -38,9 +39,20 @@ function ProjectCard({ title, description, status, features, icon }: ProjectCard
       </div>
       
       <div className="mt-6">
-        <button className="w-full bg-gradient-to-r from-[#0072CE] to-[#004A8B] text-white py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
-          Learn More
-        </button>
+        {link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-block bg-gradient-to-r from-[#0072CE] to-[#004A8B] text-white py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 text-center"
+          >
+            Visit Site
+          </a>
+        ) : (
+          <button className="w-full bg-gradient-to-r from-[#0072CE] to-[#004A8B] text-white py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
+            Learn More
+          </button>
+        )}
       </div>
     </div>
   );

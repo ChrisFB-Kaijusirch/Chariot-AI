@@ -12,28 +12,32 @@ const projects = [
       "Easy integration",
       "Analytics dashboard"
     ],
-    icon: "🤖"
+    icon: "🤖",
+    link: "https://chrisfb-kaijusirch.github.io/BotBuddy/"
   },
   {
     title: "Taxi Operations Hub",
     description: "Comprehensive platform for managing taxi fleet operations, driver scheduling, and customer bookings with real-time tracking.",
     status: "In Development",
     features: ["Fleet Management", "Real-time Tracking", "Driver Scheduling", "Customer Portal"],
-    icon: "🚕"
+    icon: "🚕",
+    link: ""
   },
   {
     title: "Job Seeker Pro",
     description: "Advanced job search platform connecting talented professionals with opportunities through intelligent matching algorithms.",
     status: "In Development", 
     features: ["Smart Matching", "Profile Builder", "Application Tracking", "Interview Scheduler"],
-    icon: "💼"
+    icon: "💼",
+    link: ""
   },
   {
     title: "Simple Roster Lite",
     description: "Streamlined employee scheduling solution designed for small to medium businesses with intuitive roster management.",
     status: "In Development",
     features: ["Drag & Drop Scheduling", "Shift Management", "Employee Portal", "Time Tracking"],
-    icon: "📅"
+    icon: "📅",
+    link: ""
   }
 ];
 
