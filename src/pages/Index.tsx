@@ -38,6 +38,19 @@ const projects = [
     features: ["Drag & Drop Scheduling", "Shift Management", "Employee Portal", "Time Tracking"],
     icon: "📅",
     link: ""
+  },
+  {
+    title: "PDF Creator Studio",
+    description: "Easy-to-use app for creating, merging, and manipulating PDF documents for businesses and individuals.",
+    status: "In Development",
+    features: [
+      "Create PDFs from various sources",
+      "Merge and split PDF files",
+      "Add text, images, and signatures",
+      "Export and share PDFs easily"
+    ],
+    icon: "📄",
+    link: ""
   }
 ];
 
