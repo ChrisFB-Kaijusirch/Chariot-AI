@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/holdings-ctc-logo.svg'; // Adjust the path if your assets folder is elsewhere
+import logo from '../assets/HoldingsCTC_WebAppSolutions.png'; // Changed to new logo file
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

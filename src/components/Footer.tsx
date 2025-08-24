@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/holdings-ctc-logo.svg'; // Adjust path if necessary
+import logo from '../assets/HoldingsCTC_WebAppSolutions.png'; // Changed to new logo file
 
 function Footer() {
   return (
