@@ -2,22 +2,37 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
+    title: "BotBuddy",
+    description: "No-code chat bot builder with a visual interface. Design, deploy, and manage chat bots effortlessly—no programming skills required!",
+    status: "In Development",
+    features: [
+      "Visual chat flow builder",
+      "Multi-platform deployment",
+      "Easy integration",
+      "Analytics dashboard"
+    ],
+    icon: "🤖"
+  },
+  {
     title: "Taxi Operations Hub",
     description: "Comprehensive platform for managing taxi fleet operations, driver scheduling, and customer bookings with real-time tracking.",
     status: "In Development",
-    features: ["Fleet Management", "Real-time Tracking", "Driver Scheduling", "Customer Portal"]
+    features: ["Fleet Management", "Real-time Tracking", "Driver Scheduling", "Customer Portal"],
+    icon: "🚕"
   },
   {
     title: "Job Seeker Pro",
     description: "Advanced job search platform connecting talented professionals with opportunities through intelligent matching algorithms.",
     status: "In Development", 
-    features: ["Smart Matching", "Profile Builder", "Application Tracking", "Interview Scheduler"]
+    features: ["Smart Matching", "Profile Builder", "Application Tracking", "Interview Scheduler"],
+    icon: "💼"
   },
   {
     title: "Simple Roster Lite",
     description: "Streamlined employee scheduling solution designed for small to medium businesses with intuitive roster management.",
     status: "In Development",
-    features: ["Drag & Drop Scheduling", "Shift Management", "Employee Portal", "Time Tracking"]
+    features: ["Drag & Drop Scheduling", "Shift Management", "Employee Portal", "Time Tracking"],
+    icon: "📅"
   }
 ];
 
