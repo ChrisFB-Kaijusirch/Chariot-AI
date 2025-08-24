@@ -14,7 +14,16 @@ jobs:
         with:
           fetch-depth: 1
 
-      # No build step necessary if docs/ is always up to date
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with Vite
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
